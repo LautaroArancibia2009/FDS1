@@ -6,98 +6,80 @@
     <style>
         body {
             margin: 0;
-            padding: 0;
-            background-image: url('https://picsum.photos/1920/1080');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
         }
 
         .contenedor {
             display: flex;
             justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 20px;
+            padding: 40px 20px;
         }
 
         .cv {
-            background-color: white;
-            padding: 30px;
-            border-radius: 15px;
-            max-width: 700px;
+            background: white;
             width: 100%;
-            box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+            max-width: 800px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
 
-        h1 {
+        .header {
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            color: white;
+            padding: 30px;
             text-align: center;
-            margin-bottom: 10px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 32px;
+            letter-spacing: 1px;
+        }
+
+        .contenido {
+            padding: 25px;
         }
 
         h2 {
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 5px;
-            margin-top: 20px;
+            color: #0072ff;
+            margin-top: 25px;
+            border-left: 5px solid #00c6ff;
+            padding-left: 10px;
         }
 
-        p, li {
-            font-size: 14px;
+        p {
+            margin: 8px 0;
+            color: #333;
         }
 
         ul {
             padding-left: 20px;
         }
-    </style>
-</head>
-<body>
-    <div class="contenedor">
-        <div class="cv">
-            <h1>Lautaro Gabriel</h1>
 
-            <h2>Datos personales</h2>
-            <p><strong>DNI:</strong> (completar)</p>
-            <p><strong>Fecha de nacimiento:</strong> (completar)</p>
-            <p><strong>Dirección:</strong> (completar)</p>
-            <p><strong>Teléfono:</strong> (completar)</p>
-            <p><strong>Email:</strong> (completar)</p>
+        li {
+            margin-bottom: 5px;
+        }
 
-            <h2>Perfil profesional</h2>
-            <p>Soy una persona responsable, con ganas de aprender y desarrollarme laboralmente. Me destaco por mi compromiso, buena predisposición y capacidad para trabajar en equipo.</p>
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
 
-            <h2>Formación académica</h2>
-            <ul>
-                <li>(Nivel de estudios)</li>
-                <li>Institución: (nombre)</li>
-                <li>Año de finalización: (completar)</li>
-            </ul>
+        .dato {
+            background: #f4f7ff;
+            padding: 10px;
+            border-radius: 10px;
+        }
 
-            <h2>Experiencia laboral</h2>
-            <ul>
-                <li>Puesto: (completar)</li>
-                <li>Lugar: (completar)</li>
-                <li>Período: (completar)</li>
-                <li>Tareas: atención al cliente, organización, etc.</li>
-            </ul>
+        .dato strong {
+            color: #0072ff;
+        }
 
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Trabajo en equipo</li>
-                <li>Responsabilidad</li>
-                <li>Buena comunicación</li>
-                <li>Manejo básico de computación</li>
-            </ul>
-
-            <h2>Idiomas</h2>
-            <ul>
-                <li>Español: Nativo</li>
-            </ul>
-
-            <h2>Referencias</h2>
-            <p>Disponibles a solicitud.</p>
-        </div>
-    </div>
-</body>
-</html>
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
