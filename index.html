@@ -2,27 +2,38 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Fondo con Imagen</title>
+    <title>Inicio</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            background-image: url('https://picsum.photos/1920/1080'); /* Cambiá la URL por tu imagen */
-            background-size: cover; /* Hace que la imagen cubra toda la pantalla */
-            background-position: center; /* Centra la imagen */
-            background-repeat: no-repeat; /* Evita que se repita */
+            background-image: url('https://picsum.photos/1920/1080');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             height: 100vh;
+        }
+
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5); /* Oscurece el fondo */
         }
 
         h1 {
             color: white;
-            text-align: center;
-            padding-top: 20%;
             font-family: Arial, sans-serif;
+            font-size: 40px;
+            text-align: center;
+            letter-spacing: 2px;
         }
     </style>
 </head>
 <body>
-    <h1>Bienvenido 😎</h1>
+    <div class="contenedor">
+        <h1>Bienvenido a nuestro sitio web</h1>
+    </div>
 </body>
 </html>
