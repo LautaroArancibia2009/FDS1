@@ -1,61 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Currículum - Lautaro Gabriel</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-image: url('https://picsum.photos/1920/1080');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            font-family: Arial, sans-serif;
-        }
+<meta charset="UTF-8">
+<title>Currículum - Lautaro Gabriel</title>
 
-        .contenedor {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-        .cv {
-            background-color: white;
-            padding: 30px;
-            border-radius: 15px;
-            max-width: 700px;
-            width: 100%;
-            box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
-        }
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
 
-        h1 {
-            text-align: center;
-            margin-bottom: 10px;
-        }
+/* CONTENEDOR */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
 
-        h2 {
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 5px;
-            margin-top: 20px;
-        }
+/* CV */
+.cv {
+    background: white;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
 
-        p, li {
-            font-size: 14px;
-        }
+/* HEADER */
+.header {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
 
-        ul {
-            padding-left: 20px;
-        }
-    </style>
+.header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.header p {
+    margin-top: 5px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* CONTENIDO */
+.contenido {
+    padding: 30px;
+}
+
+/* SECCIONES */
+h2 {
+    color: #764ba2;
+    border-left: 5px solid #667eea;
+    padding-left: 10px;
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+p {
+    font-size: 14px;
+    color: #333;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #444;
+}
+
+/* ETIQUETAS */
+strong {
+    color: #333;
+}
+
+/* HABILIDADES EN ESTILO TAG */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    background: #667eea;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* EFECTO HOVER */
+.cv:hover {
+    transform: scale(1.01);
+    transition: 0.3s;
+}
+</style>
 </head>
+
 <body>
-    <div class="contenedor">
-        <div class="cv">
+
+<div class="contenedor">
+    <div class="cv">
+
+        <div class="header">
             <h1>Lautaro Gabriel</h1>
+            <p>Perfil profesional</p>
+        </div>
+
+        <div class="contenido">
 
             <h2>Datos personales</h2>
             <p><strong>DNI:</strong> (completar)</p>
@@ -83,12 +147,12 @@
             </ul>
 
             <h2>Habilidades</h2>
-            <ul>
-                <li>Trabajo en equipo</li>
-                <li>Responsabilidad</li>
-                <li>Buena comunicación</li>
-                <li>Manejo básico de computación</li>
-            </ul>
+            <div class="tags">
+                <div class="tag">Trabajo en equipo</div>
+                <div class="tag">Responsabilidad</div>
+                <div class="tag">Comunicación</div>
+                <div class="tag">Computación básica</div>
+            </div>
 
             <h2>Idiomas</h2>
             <ul>
@@ -97,7 +161,10 @@
 
             <h2>Referencias</h2>
             <p>Disponibles a solicitud.</p>
+
         </div>
     </div>
+</div>
+
 </body>
 </html>
