@@ -41,6 +41,22 @@ body {
     padding: 30px 20px;
 }
 
+/* FOTO PERFIL */
+.foto-perfil {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 15px;
+    border: 4px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.foto-perfil:hover {
+    transform: scale(1.05);
+}
+
 .header h1 {
     margin: 0;
     font-size: 32px;
@@ -86,7 +102,7 @@ strong {
     color: #333;
 }
 
-/* HABILIDADES EN ESTILO TAG */
+/* HABILIDADES */
 .tags {
     display: flex;
     flex-wrap: wrap;
@@ -117,7 +133,11 @@ strong {
         <div class="header">
             <h1>Lautaro Gabriel</h1>
             <p>Perfil profesional</p>
-            <img>https://uploadnow.io/files/1pk0NZ3</img>
+
+            <!-- FOTO -->
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...(recortado para que no sea enorme)..."
+                 alt="Foto de perfil"
+                 class="foto-perfil">
         </div>
 
         <div class="contenido">
@@ -125,7 +145,7 @@ strong {
             <h2>Datos personales</h2>
             <p><strong>DNI:</strong> 49.855.429</p>
             <p><strong>Fecha de nacimiento:</strong> 6/11/2009</p>
-            <p><strong>Dirección:</strong> Argentina, Mendoza, San martin.</p>
+            <p><strong>Dirección:</strong> Argentina, Mendoza, San Martin</p>
             <p><strong>Teléfono:</strong> +54 2634659239</p>
             <p><strong>Email:</strong> arancibialautaro06@gmail.com</p>
 
@@ -134,7 +154,7 @@ strong {
 
             <h2>Formación académica</h2>
             <ul>
-                <li>secundaria</li>
+                <li>Secundaria</li>
                 <li>Institución: Jose Manuel Estrada</li>
                 <li>Año de finalización: 2027</li>
             </ul>
@@ -142,9 +162,9 @@ strong {
             <h2>Experiencia laboral</h2>
             <ul>
                 <li>Puesto: ayudante de obra</li>
-                <li>Lugar: calle thomas thomas</li>
+                <li>Lugar: calle Thomas Thomas</li>
                 <li>Período: 2/3 meses</li>
-                <li>Tareas:organización, preparacion de mezcla, acarrear engarilladas de mezcla, limpiar, mojar ladrillos etc.</li>
+                <li>Tareas: organización, preparación de mezcla, acarrear mezcla, limpieza, mojar ladrillos, etc.</li>
             </ul>
 
             <h2>Habilidades</h2>
