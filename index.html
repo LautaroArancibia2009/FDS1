@@ -35,10 +35,23 @@ body {
 
 /* HEADER */
 .header {
-    background: #1e2a38;
+    background: linear-gradient(135deg, #1e2a38, #2c3e50);
     color: white;
     text-align: center;
     padding: 35px 20px;
+    position: relative;
+}
+
+/* DETALLE DE FONDO */
+.header::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.05) 10%, transparent 10%);
+    background-size: 20px 20px;
+    top: -50%;
+    left: -50%;
 }
 
 /* FOTO PERFIL */
@@ -49,17 +62,39 @@ body {
     object-fit: cover;
     margin-top: 15px;
     border: 3px solid #ffffff;
+    position: relative;
+    z-index: 1;
 }
 
+/* NOMBRE */
 .header h1 {
     margin: 10px 0 0 0;
     font-size: 30px;
+    position: relative;
+    z-index: 1;
 }
 
+/* PERFIL PROFESIONAL (CAMBIO DE COLOR) */
 .header p {
-    margin-top: 5px;
-    font-size: 14px;
-    opacity: 0.8;
+    margin-top: 8px;
+    font-size: 15px;
+    color: #60a5fa;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+}
+
+/* LINEA DECORATIVA */
+.header::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #60a5fa;
+    margin: 10px auto 0;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
 }
 
 /* CONTENIDO */
@@ -128,8 +163,9 @@ strong {
             <h1>Lautaro Gabriel</h1>
             <p>Perfil profesional</p>
 
-            <!-- FOTO (guardá tu imagen como foto.jpg en la misma carpeta) -->
-            <img src=https://image2url.com/r2/default/images/1775606423556-436fc759-f0a1-4fba-acc8-bdd6a5e4fade.jpeg alt=foto mia style="width:250px;height:260px;">
+            <img src="https://image2url.com/r2/default/images/1775606423556-436fc759-f0a1-4fba-acc8-bdd6a5e4fade.jpeg" 
+                 alt="Foto de perfil" 
+                 class="foto-perfil">
         </div>
 
         <div class="contenido">
