@@ -11,31 +11,48 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #dfe9f3, #ffffff);
+    background: linear-gradient(135deg, #cfd9df, #e2ebf0);
     position: relative;
+    overflow-x: hidden;
 }
 
-/* DETALLES DE FONDO */
+/* BURBUJA 1 */
 body::before {
-    content: "";
-    position: fixed;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(59,130,246,0.15), transparent 70%);
-    top: -100px;
-    left: -100px;
-    z-index: -1;
-}
-
-body::after {
     content: "";
     position: fixed;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(30,42,56,0.1), transparent 70%);
-    bottom: -100px;
-    right: -100px;
+    background: radial-gradient(circle, rgba(59,130,246,0.35), transparent 70%);
+    top: -150px;
+    left: -150px;
     z-index: -1;
+    filter: blur(40px);
+}
+
+/* BURBUJA 2 */
+body::after {
+    content: "";
+    position: fixed;
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, rgba(30,42,56,0.25), transparent 70%);
+    bottom: -150px;
+    right: -150px;
+    z-index: -1;
+    filter: blur(40px);
+}
+
+/* BURBUJA EXTRA */
+.contenedor::before {
+    content: "";
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(96,165,250,0.3), transparent 70%);
+    top: 40%;
+    left: 60%;
+    z-index: -1;
+    filter: blur(30px);
 }
 
 /* CONTENEDOR */
@@ -175,7 +192,7 @@ strong {
             <h1>Lautaro Arancibia</h1>
             <p>Perfil profesional</p>
 
-            <img src="https://image2url.com/r2/default/images/1775606423556-436fc759-f0a1-4fba-acc8-bdd6a5e4fade.jpeg" alt="foto mia" style="width:220px;height:250px;">
+            <img src="https://image2url.com/r2/default/images/1775606423556-436fc759-f0a1-4fba-acc8-bdd6a5e4fade.jpeg" alt="foto mia" style="width:200px;height:250px;">
         </div>
 
         <div class="contenido">
